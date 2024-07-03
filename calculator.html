@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .mainDiv{
+            background-color: #333;
+            border-radius: 5px;
+            padding: 10px;
+            width: 400px;
+            height: 400px;
+            border: 10px solid rgb(87, 12, 12);
+        }
+
+        .div1{
+            background-color: cadetblue;
+            border-radius: 5px;
+            color: #333;
+            font-size: 50px;
+            padding: 10px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .div2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            height: 300px;
+        }
+
+        .equal{
+            background-color: #ffcc00;
+            color: #fff;
+        }
+
+        .bottoms{
+            border-radius: 10px;
+            border: 5px solid black;
+            font-size: larger;
+        }
+
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .oporator{
+            font-size: x-large;
+            color: crimson;
+        }
+
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="mainDiv">
+        <div class="div1">0</div>
+        <div class="div2">
+            <button class="bottoms">7</button>
+            <button class="bottoms">8</button>
+            <button class="bottoms">9</button>
+            <button class="bottoms oporator">/</button>
+            <button class="bottoms">4</button>
+            <button class="bottoms">5</button>
+            <button class="bottoms">6</button>
+            <button class="bottoms oporator">*</button>
+            <button class="bottoms">1</button>
+            <button class="bottoms">2</button>
+            <button class="bottoms">3</button>
+            <button class="bottoms oporator">-</button>
+            <button class="bottoms">0</button>
+            <button class="bottoms">.</button>
+            <button class="bottoms oporator">+</button>
+            <button class="equal bottoms">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
